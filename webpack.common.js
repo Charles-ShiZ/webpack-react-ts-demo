@@ -1,6 +1,5 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
@@ -20,22 +19,6 @@ module.exports = {
   ],
   resolve:{
     extensions:[".ts", ".tsx", ".js", ".css", ".scss"]
-  },
-  optimization: {
-    // minimizer: [
-    //   (compiler) => {
-    //     const TerserPlugin = require('terser-webpack-plugin');
-    //     new TerserPlugin({
-    //       parallel: true, // 是否开启多进程并发打包，默认是true
-    //       terserOptions: {
-    //         output: {
-    //           comments: false,
-    //         },
-    //       },
-    //       extractComments: true, // 是否保留剥离的注释，默认是true
-    //     }).apply(compiler);
-    //   },
-    // ],
   },
   module: {
     rules: [

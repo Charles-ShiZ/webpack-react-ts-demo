@@ -1,3 +1,6 @@
+启动：npm start 
+打包：npm build
+
 # 从零创建React项目
 ## 技术栈
   webpack5 + react17 + ts + babel7 + eslint7
@@ -243,4 +246,3 @@ module.exports = {
   ]
 }
 ```
-启动：npm start 或 npm build 即可

@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import "./index.css";
 
 function App(){
   return (

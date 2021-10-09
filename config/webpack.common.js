@@ -8,7 +8,10 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
-    clean:true
+    clean:true,
+    environment: {
+      arrowFunction:false // 将包裹打包代码的自执行函数，从箭头函数改为function。作用就是兼容不支持箭头函数的老版本浏览器，比如ie。
+    }
   },
   plugins:[
     new HTMLWebpackPlugin({
